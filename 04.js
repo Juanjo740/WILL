@@ -14,6 +14,31 @@ function numeroSimetrico(num) {
 
   // Tu código:
 
+    let numString = num.toString()
+
+    let numArray = numString.split("")
+
+    let guardarNumInverso = []
+
+    for(let i = numArray.length -1; i >= 0; i--) {
+
+      guardarNumInverso.push(numArray[i])
+
+    }
+
+    let numeroInversoString = guardarNumInverso.join("")
+    let numeroInverso = Number(numeroInversoString)
+
+    if (num === numeroInverso) {
+
+      return true
+      
+    } else {
+
+      return false
+
+    }
+
 }
 
 // No modifiques nada debajo de esta linea //

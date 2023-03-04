@@ -12,6 +12,20 @@ function soloNumeros(array) {
 
   // Tu código aca:
 
+let arrayEnteros = []
+
+  for(let i = 0; i < array.length; i++) {
+
+    if (typeof array[i] === "number") {
+
+      arrayEnteros.push(array[i])
+
+    }
+
+  }
+
+  return arrayEnteros
+
 }
 
 // No modifiques nada debajo de esta linea //
